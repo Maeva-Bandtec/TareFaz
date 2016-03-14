@@ -1,0 +1,52 @@
+﻿@{
+    ViewBag.Title = "FaleConosco";
+}
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">
+                Fale Conosco
+                <small>diga-nos</small>
+            </h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-8">
+            <h3>Envie-nos sua mensagem</h3>
+            <div class="control-group form-group">
+                <div class="controls">
+                    <label>Seu nome:</label>
+                    <input type="text" class="form-control" id="nome" required data-validation-required-message="Digite seu nome." maxlength="100">
+                    <p class="help-block"></p>
+                </div>
+            </div>
+            <div class="control-group form-group">
+                <div class="controls">
+                    <label>Email:</label>
+                    <input type="email" class="form-control" id="email" required data-validation-required-message="Digite seu email." maxlength="50">
+                </div>
+            </div>
+            <div class="control-group form-group">
+                <div class="controls">
+                    <label>Assunto:</label>
+                    <select class="form-control" id="ddlAssunto">
+                    </select>
+                    <p class="help-block"></p>
+                </div>
+            </div>
+            <div class="control-group form-group">
+                <div class="controls">
+                    <label>Mensagem:</label>
+                    <textarea rows="10" cols="100" class="form-control" id="mensagem" required data-validation-required-message="Digite sua mensagem" maxlength="999" style="resize:none"></textarea>
+                </div>
+            </div>
+            <button id="btnEnviarMensagem"type="submit" class="btn btn-primary">Enviar mensagem</button>
+        </div>
+    </div>
+    <hr>
+</div>
+
+<script type="text/javascript" src="~/Scripts/Pages/faleConosco.js"></script>

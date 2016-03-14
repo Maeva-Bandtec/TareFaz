@@ -1,0 +1,93 @@
+﻿@{
+    ViewBag.Title = "Cadastrar";
+}
+
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">
+            Serviços
+            <small>cadastro</small>
+        </h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-8">
+
+        <div class="control-group form-group">
+            <div class="controls">
+                <label >Categoria:</label>
+                <select class="form-control" id="ddlCategoria">
+                </select>
+                <p class="help-block"></p>
+            </div>
+        </div>
+
+        <div class="control-group form-group">
+            <div class="controls">
+                <label>Título:</label>
+                <input type="text" class="form-control" maxlength="20" id="txtTituloServico" placeholder="É o que vai aparecer pra galera...">
+                <p class="help-block"></p>
+            </div>
+        </div>
+
+        <div class="control-group form-group">
+            <div class="controls">
+                <label>Descrição:</label>
+                <textarea rows="10" cols="100" placeholder="Conte-nos mais sobre esse tal serviço..." class="form-control" id="txtDescricao" maxlength="9999" style="resize:none"></textarea>
+            </div>
+        </div>
+
+        <div class="control-group form-group">
+            <div class="controls">
+                <label>Foto:</label>
+                <input type="file" class="form-control" id="imagem" />
+            </div>
+        </div>
+
+        <div class="control-group form-group">
+            <div class="controls">
+                <label>Tempo de entrega:</label>
+                <input type="text" min="1" maxlength="3" placeholder="Dado em dias..." class="form-control" id="tempoEntrega">
+                <p class="help-block"></p>
+            </div>
+        </div>
+
+        <div class="control-group form-group">
+            <div class="controls">
+                <label>Tags:</label>
+                <input type="text" maxlength="50" placeholder="#tag1 #tag2..." class="form-control" id="txtTagServico">
+                <p class="help-block"></p>
+            </div>
+        </div>
+
+        <div class="control-group form-group">
+            <div class="controls">
+                <label>Vídeo:</label>
+                <input type="url" placeholder="http://www.youtube.com/linkvideo..." class="form-control" id="video">
+                <p class="help-block"></p>
+            </div>
+        </div>
+
+        <div class="control-group form-group">
+            <div class="controls">
+                <label>Necessita arquivo:</label>
+                <input type="checkbox" id="temArquivo" />
+            </div>
+        </div>
+
+        <div class="control-group form-group">
+            <div class="controls">
+                <label>Instruções ao comprador:</label>
+                <textarea rows="10" cols="100" placeholder="Para este serviço vai precisar de que do comprador?" class="form-control" id="txtInstrucoes" required maxlength="999" style="resize:none"></textarea>
+            </div>
+        </div>
+        
+        <input type="button" class="btn btn-primary" id="btnSalvar" value="Salvar"/>
+        <input type="button" class="btn btn-primary" id="btn Cancelar" value="Cancelar"/>
+    </div>
+
+</div>
+
+<input id="hdnId" type="hidden" value="naoTrocou" />
+<script type="text/javascript" src="~/Scripts/Pages/servicoCadastrar.js"></script>

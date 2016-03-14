@@ -1,0 +1,81 @@
+﻿@{
+    ViewBag.Title = "Opções";
+}
+<link href="~/Content/demo.css" rel="stylesheet" />
+<link href="~/Content/style6.css" rel="stylesheet" />
+<div class="container">
+    <br /><br /><br /><br /><br /><br />
+    <div class="content">
+        <ul class="ca-menu">
+            <li>
+                <a href="meusDados">
+                    <span class="ca-icon">U</span>
+                    <div class="ca-content">
+                        <h2 class="ca-main">Dados</h2><h2 class="ca-main"> Cadastrais</h2>
+                        <h3 class="ca-sub">Alterar inforamações pessoais</h3>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" id="minhasCompras">
+                    <span class="ca-icon">Z</span>
+                    <div class="ca-content">
+                        <h2 class="ca-main">Minhas</h2><h2 class="ca-main">Compras</h2>
+                        <h3 class="ca-sub">Acompanhar serviços comprados</h3>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" id="gerenciarServicos">
+                    <span class="ca-icon">S</span>
+                    <div class="ca-content">
+                        <h2 class="ca-main">Meus</h2><h2 class="ca-main"> Serviços</h2>
+                        <h3 class="ca-sub">Cadastrar e gerenciar serviços</h3>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" id="inbox">
+                    <span class="ca-icon">F</span>
+                    <div class="ca-content">
+                        <h2 class="ca-main"> Caixa de Mensagens</h2>
+                        <h3 class="ca-sub">Visualizar e responder perguntas </h3>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" id="sair">
+                    <span class="ca-icon">X</span>
+                    <div class="ca-content">
+                        <h2 class="ca-main">Sair da</h2>
+                        <h2 class="ca-main">Conta</h2>
+                        <h3 class="ca-sub">Até mais jovem, volte logo õ/</h3>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div><!-- content -->
+</div>
+
+
+<script>
+
+    $("#sair").click(function () {
+        sessionStorage["sessaoUser"] = "";
+        window.location.replace("@Href("~/Home")");
+    });
+
+
+    //$("#minhasCompras").click(function () {
+    //    window.location.replace(util.Dados.baseURL + "usuario/ServicosComprados");
+    //});
+
+    $("#gerenciarServicos").click(function () {
+        window.location.replace(util.Dados.baseURL + "usuario/MeusServicos");
+    });
+
+    $("#inbox").click(function () {
+        window.location.replace(util.Dados.baseURL + "usuario/Inbox");
+    });
+
+</script>

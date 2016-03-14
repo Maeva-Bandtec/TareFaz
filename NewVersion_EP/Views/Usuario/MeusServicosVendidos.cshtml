@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Serviços Vendidos";
+    var totalSegmentos = Request.Url.Segments.Count();
+
+    int numero = 0;
+
+    if (System.Text.RegularExpressions.Regex.IsMatch(Request.Url.Segments[totalSegmentos - 1], @"^\d+$"))
+    {
+        numero = int.Parse(Request.Url.Segments[totalSegmentos - 1]);
+    }
+}
+
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">
+            Serviços
+            <small>vendidos</small>
+        </h1>
+    </div>
+</div>
+
+<div class="row">
+        <div id="container"></div>
+</div>
+
+<input id="hdnPagina" type="hidden" value="@numero" />
+
+<script type="text/javascript" src="~/Scripts/Pages/usuarioMeusServicosVendidos.js"></script>

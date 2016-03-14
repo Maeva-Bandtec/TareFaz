@@ -1,0 +1,130 @@
+﻿<script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.3.15/slick.min.js"></script>
+<link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.3.15/slick.css" />
+<style type="text/css">
+    .slick-prev {
+        float: left;
+        position: absolute;
+        left: 16px;
+    }
+
+    .slick-next {
+        float: right;
+        position: absolute;
+        right: 16px;
+    }
+
+    .ajustaConteudo {
+        text-align: justify;
+    }
+</style>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.slider').slick();
+    });
+</script>
+<br />
+
+<div class="slider">
+    <div style="height:270px;"> <img src="~/Content/Images/Banners/banner_01.jpg" /> </div>
+    <div style="height:270px;"><img src="~/Content/Images/Banners/banner_02.jpg" /></div>
+    <div style="height:270px;"> <img src="~/Content/Images/Banners/banner_03.jpg" /></div>
+</div>
+
+<br />
+<div class="ajustaConteudo">
+
+
+    <div style="text-align:center;">
+
+        <div style="text-align:left">
+            <h3>Top vendas</h3>
+            <hr />
+            <img src="~/Content/Images/Site/topVendidos.jpg" usemap="#mapVendidos" />
+
+            <map name="mapVendidos">
+                <area shape="rect" coords="6,5,330,280" href="~/Servico/Detalhes/1" alt="Programo .NET">
+                <area shape="rect" coords="360,5,680,280" href="~/Servico/Detalhes/2" alt="Recito Lorem Ipsum">
+                <area shape="rect" coords="710,5,1030,280" href="~/Servico/Detalhes/3" alt="Desenho thumbnails">
+            </map>
+        </div>
+
+        <div style="text-align:left">
+            <h3>Top recentes</h3>
+            <hr />
+            <img src="~/Content/Images/Site/topRecentes.jpg" usemap="#mapRecentes" />
+
+            <map name="mapRecentes">
+                <area shape="rect" coords="6,30,330,300" href="~/Servico/Detalhes/4" alt="Woooooooof">
+                <area shape="rect" coords="360,10,680,300" href="~/Servico/Detalhes/5" alt="Modelagem de BD">
+                <area shape="rect" coords="710,10,1030,300" href="~/Servico/Detalhes/6" alt="Consultoria em FC">
+            </map>
+        </div>
+
+        <br /><br />
+        <h3>Vamos ao que interessa, né !?</h3>
+        <div class="row">
+            <div class="col-md-6" style="text-align:right;">
+                <span style="padding-right:85px;">Para os calouros</span><br />
+                <a href="/Usuario/Cadastrar">
+                    <input type="button" class="btn-default btn" value="CRIAR CONTA" id="CriarConta" style="height:40px; width:280px;" />
+                </a>
+            </div>
+            <div class="col-md-3">
+                <span style="padding-left:9px;">Para os interessados</span><br />
+                <a href="/Servico/Pagina/1">
+                    <input type="button" class="btn-default btn" value="VER SERVIÇOS" id="VerServicos" style="height:40px; width:280px;" />
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br /><br /><br />
+<div id="informacoes" style="text-align:center;">
+    <div class="row">
+        <div class="col-md-3">
+            <img src="~/Content/Images/Site/info_06.png" width="200" />
+        </div>
+        <div class="col-md-3">
+            <img src="~/Content/Images/Site/info_02.png" width="200" />
+        </div>
+        <div class="col-md-3">
+            <img src="~/Content/Images/Site/info_05.png" width="200" />
+        </div>
+        <div class="col-md-3">
+            <img src="~/Content/Images/Site/info_01.png" width="200" />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-3">
+            <h3>FAÇA ISSO</h3>
+            Pessoas que amam o que fazem ajudam você a ter tudo feito a um valor imbatível.
+            Então repasse energias, bom gosto e tudo o que há de bom.
+        </div>
+        <div class="col-md-3">
+            <h3>COMECE A VENDER</h3>
+            O que você faz melhor?<br /> Cadastre um serviço e comece a vender. É grátis, e só leva alguns minutos.
+        </div>
+        <div class="col-md-3">
+            <h3>CONFIANÇA & SEGURANÇA</h3>
+            Sua segurança é nossa maior prioridade. Transações seguras com nossa equipe de segurança protegendo você todas as vezes.
+        </div>
+        <div class="col-md-3">
+            <h3>DINHEIRO EXTRA</h3>
+            A mola mestra do mundo.<br /> Tá esperando o que  ? <br />GO GO GO GO GUY
+        </div>
+    </div>
+    <br /><br />
+    <div style="text-align:center;">
+        <span>
+            Aproveite também e nos tenha no celular, baixe o aplicativo para android:
+        </span>
+        <br /><br />
+        <div style="text-align:center">
+            <img src="~/Content/Images/Site/googleplay.png" width="200" />
+        </div>
+    </div>
+</div>
+
+

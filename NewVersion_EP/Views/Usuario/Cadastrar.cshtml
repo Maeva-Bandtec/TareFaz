@@ -1,0 +1,80 @@
+﻿@{
+    ViewBag.Title = "Cadastrar";
+}
+
+<style>
+    .verde {
+        color: rgb(92,184,92);
+    }
+
+    .sombraVerde {
+        border-color: rgb(92,184,92) !important;
+        outline: 0;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(92,184,92, .6) !important;
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(92,184,92, .6) !important;
+        margin-bottom: 2px !important;
+    }
+
+    .vermelho {
+        color: rgb(255, 0, 0);
+    }
+
+    .sombraVermelho {
+        border-color: red !important;
+        outline: 0;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255, 0, 0, .6) !important;
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255, 0, 0, .6) !important;
+        margin-bottom: 2px !important;
+    }
+
+    #campoForm {
+        position: relative;
+        left: 35%;
+        margin-top: 2%;
+        padding: 20px;
+        border: 1px solid rgba(0,0,0,0.3);
+        width: 28.5%;
+    }
+
+    h4 {
+        padding-bottom: 15px;
+        text-align: center;
+        margin-top: 0px;
+        border-bottom: 1px solid rgba(0,0,0,0.3);
+        text-transform: uppercase;
+    }
+</style>
+
+<form id="campoForm">
+    <h4>cadastro usuário</h4>
+
+    <label>Nome completo:</label>
+    <input id="txtNome" name="Nome" type="text" maxlength="100" class="form-control vldvl" style="margin-bottom: 10px" />
+
+    <label>Email:</label><br />
+    <input id="txtEmail" name="Email" maxlength="50" type="email" class="form-control vldvl" style="margin-bottom: 10px; display:inline-block" />
+    <span id="icoOK" class="glyphicon glyphicon-ok" style="display:none">
+        <span id="MensagemErro" style="font-family:Calibri"></span>
+    </span><br />
+
+    <label>Sexo:</label><br />
+    <select id="ddlSexo" name="Sexo" class="form-control vldvl" style="margin-bottom: 10px; display:inline-block; width:110px">
+        <option value="">Selecione</option>
+    </select>
+    <br />
+
+    <label>Telefone:</label><br />
+    <input id="txtDDD" name="DDD" type="text" maxlength="2" class="form-control vldvl" style="margin-bottom: 10px; width: 42px; display:inline-block" /> -
+    <input id="txtTelefone" name="Telefone" type="text" maxlength="9" class="form-control vldvl" style="margin-bottom: 10px; display:inline-block; width:100px" /><br />
+
+    <label>Senha:</label>
+    <input id="txtSenha" name="Senha" type="password" maxlength="25" class="form-control vldvl" style="margin-bottom: 10px" />
+
+    <label>Confirmar senha:</label>
+    <input id="txtConfSenha" name="Senha2" type="password" maxlength="25" class="form-control vldvl" style="margin-bottom: 20px" />
+
+    <input id="btnCancelar" class="btn-danger btn" style="width:88px" type="button" value="Cancelar" />
+    <input id="btnSalvar" class="btn-success btn" style="width:188px" type="button" value="Salvar" />
+</form>
+
+<script type="text/javascript" src="/Scripts/Pages/UsuarioCadastrar.js"></script>

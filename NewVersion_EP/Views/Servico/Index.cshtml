@@ -1,0 +1,99 @@
+﻿@model IEnumerable<NewVersion_EP.Models.TB_Servicos>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TB_Categoria.NomeCategoria)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TB_Usuario.NomeCompleto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Titulo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Descricao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Foto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TempoEntrega)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tag)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Video)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Instrucoes)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TemArquivo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DtAtivacao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.isAtivo)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TB_Categoria.NomeCategoria)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TB_Usuario.NomeCompleto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Titulo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Descricao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Foto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TempoEntrega)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tag)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Video)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Instrucoes)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TemArquivo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DtAtivacao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.isAtivo)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

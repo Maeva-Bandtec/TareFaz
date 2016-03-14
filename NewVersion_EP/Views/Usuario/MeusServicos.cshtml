@@ -1,0 +1,43 @@
+﻿@{
+    ViewBag.Title = "Meus Serviços";
+}
+
+<style>
+    .chkCustom {
+        display: inline-block;
+        width: 22px;
+        height: 22px;
+        vertical-align: middle;
+        background: url(../../Content/Images/Site/chkSprite.jpg) left top no-repeat;
+        cursor: pointer;
+    }
+
+    .chkTrue {
+        background: url(../../Content/Images/Site/chkSprite.jpg) -21px top no-repeat;
+    }
+
+    th, tr {
+        text-align: center;
+    }
+
+    a {
+        color: #1cbd9c;
+    }
+</style>
+
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">
+            Usuário
+            <small>meus serviços</small>
+        </h1>
+    </div>
+</div>
+
+<div id="containerServicos"></div>
+
+<button id="btnSalvar" class="btn btn-success" style="position:relative; left: 41%; margin-top: 3%">Salvar alterações</button>
+<button id="btnAdd" class="btn btn-primary" style="position:relative; left: 42%; margin-top: 3%">Novo serviço</button>
+
+<input id="hdnId" type="hidden" value="@ViewContext.RouteData.Values["id"]" />
+<script type="text/javascript" src="~/Scripts/Pages/usuarioMeusServicos.js"></script>

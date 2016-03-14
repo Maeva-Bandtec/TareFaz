@@ -1,0 +1,52 @@
+﻿@{
+    ViewBag.Title = "Login";
+
+}
+
+<form id="form">
+    <div class="comboAlinhado">
+        <h2>FAÇA LOGIN NO TAREFAZ</h2>
+        <span title="Email"></span>
+        <input id="Email" type="text" name="Email" placeholder="Digite seu e-mail" class="form-control keyp" />
+        <br />
+        <input id="Senha" type="password" name="Senha" placeholder="Digite sua senha" class="form-control keyp" />
+
+        <a href="#" style="padding-left:170px; font-size:15px; text-decoration:none" id="EsqueciSenha">
+            Esqueci a Senha
+            <img src="~/Content/Images/Site/icon_triste.png" style="width:20px;" />
+        </a>
+        <br /><br />
+        <input type="button" class="btn-success btn" value="Entrar" id="Entrar" style="width:200px;" />
+        <input type="button" class="btn-warning btn" value="Cancelar" id="Cancelar" style="width:90px;" />
+
+        <div style=" margin-left: 410px; margin-top:-280px;">
+            <img src="~/Content/Images/Site/cads.png" style="width:400px;" />
+
+            <input type="button" class="btn-info btn" value="CRIAR CONTA" id="CriarConta" style="width:150px; margin-left:250px; margin-top:-80px;" />
+        </div>
+    </div>
+
+</form>
+
+<style>
+    h2 {
+        font-size: 22px;
+        line-height: 34px;
+        letter-spacing: -1px;
+        font-family: "Gotham Light", sans-serif, sans-serif;
+        color: #7d7a77;
+        display: block;
+        text-align: center;
+    }
+
+    .comboAlinhado {
+        width: 300px;
+        height: 200px;
+        margin-left: 150px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        /*float: left;*/
+    }
+</style>
+
+<script type="text/javascript" src="~/Scripts/Pages/usuarioLogin.js"></script>
